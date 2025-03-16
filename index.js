@@ -11,10 +11,32 @@ const ramens = [
 let h2 = document.getElementById("h2")
     h2.innerText = "Ramen Details"
 
-let h2 = document.getElementById("Formheader")
+let h2 = document.getElementById("formHeader")
     h2.innerText = "Insert New Ramen"
 
- 
+let form = document.getElementById("form")
+form.style.display
+//we be getting the elements from the HTML and Edit them here
+//Now lets get them !! 
+const Menu = document.getElementById("ramen-menu")
+const ramen_name = document.getElementById("name")
+const restaurant = document.getElementById("Hotel")
+const rating_ramen = document.getElementById("rate")
+const comments_on_ramen  = document.getElementById("Comment")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
 
