@@ -11,7 +11,7 @@ const ramens = [
 let h2 = document.getElementById("h2")
     h2.innerText = "Ramen Details"
 
-let h2 = document.getElementById("formHeader")
+let h2 = document.getElementById("Formheader")
     h2.innerText = "Insert New Ramen"
 
  
