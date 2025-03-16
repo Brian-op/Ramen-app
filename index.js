@@ -36,7 +36,10 @@ const comments_on_ramen  = document.getElementById("Comment")
 //we shall use function
 
 function dispalyRamens(){
-Menu.innerHTML= "";
+
+    //const menu = document.getElementById('ramen-menu');
+    Menu.innerHTML= "";
+
 
 //lets use >>forEach
 //load images of ramens using forEach
@@ -54,6 +57,18 @@ ramens.forEach(ramen =>{
   });
 
 
+  //we need to know what kind of ramen we dealing with 
+  //so lets Use a Function to Alow us to know,
+  //Ramen details when Clicked
+function showRamenInfo(ramen){
+//Info we need is name, restaurant, rating and comment
+    ramen_name.innerText = ramen.name;
+    restaurant.innerText = "Restaurant:" + restaurant;
+    rating_ramen.innerText = "Rating:" + rating_ramen;    
+    comments_on_ramen.innerText = "Comment" + comments_on_ramen;
+}
+
+
 
 
 
@@ -68,6 +83,15 @@ ramens.forEach(ramen =>{
  
   
 
+
+  //Runs when page loads
+  document.addEventListener("DOMContentLoaded", dispalyRamens); 
+
+  
+ }
+
+//array for ramen
+let Ramens = ["gyukotsu", "kojiro", "naruto", "nirvana", "shoyu"]
 
 
 
