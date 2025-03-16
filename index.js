@@ -15,15 +15,43 @@ let h2 = document.getElementById("formHeader")
     h2.innerText = "Insert New Ramen"
 
 let form = document.getElementById("form")
-form.style.display
+
+
 //we be getting the elements from the HTML and Edit them here
 //Now lets get them !! 
 const Menu = document.getElementById("ramen-menu")
+
 const ramen_name = document.getElementById("name")
+
 const restaurant = document.getElementById("Hotel")
+
 const rating_ramen = document.getElementById("rate")
+
 const comments_on_ramen  = document.getElementById("Comment")
 
+//.>>>>>>DONE
+
+
+//now we need to add the images of the ramen dishes
+//we shall use function
+
+function dispalyRamens(){
+Menu.innerHTML= "";
+
+//lets use >>forEach
+//load images of ramens using forEach
+ramens.forEach(ramen =>{
+    const img = document.createElement("img");
+  //search meaning for createElement
+    img.src = ramen.image;
+    img.alt = ramen.name;
+    img.style.width = '100px';
+    img.style.margin = "7px"
+    img.addEventListener("click",() =>showRamenInfo(ramen));
+    // append as img elements inside div..name>>>> ramen-detail
+     Menu.appendChild(img);
+
+  });
 
 
 
@@ -34,6 +62,11 @@ const comments_on_ramen  = document.getElementById("Comment")
 
 
 
+
+
+
+ 
+  
 
 
 
