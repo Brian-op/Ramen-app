@@ -8,7 +8,7 @@ body{
     justify-content: space-evenly;
     justify-items: center;
     text-align: center;
-    padding: 10px; ;
+    
 
 }
 
@@ -21,7 +21,8 @@ body{
     padding: 20px;
         
 }
-#h2{
+
+#details{
     color: chartreuse;
 }
 #formHeader{
@@ -31,7 +32,11 @@ justify-content: center;
 }
 #pictures{
     display: flex;
-    justify-content:space-between;
+    justify-content:space-around;
     height: 170px;
 
+}
+#ramen-menu{
+    display: flex;
+    justify-content: center;
 }
