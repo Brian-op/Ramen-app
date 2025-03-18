@@ -5,16 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ramen Display</title>
    <link rel="stylesheet" href="style.css">
+   <script src="index.js" defer> </script>
 </head>
 <body>
-    <h1 id="h1"></h1>
+    <h1 id="h1">Ramen Menu</h1>
 
     <div id="ramen-menu"></div>
 <!--details za food-->
+<div id="pictures">
+    <img src="ramen-pics/gyukotsu.jpg" alt="gyukotsu ramen" title="gyukotsu">
+    <img src="ramen-pics/kojiro.jpg" alt="kojiro ramen" title="kojiro">
+    <img src="ramen-pics/Miso Ramen.jpeg" alt="Miso Ramen" title="Miso">
+    <img src="ramen-pics/naruto.jpg" alt="naruto Ramen" title="naruto">
+    <img src="ramen-pics/Tonkotsu ramen.jpeg" alt="Tonkotsu Ramen" title="Tonkotsu">
+</div>
 
 <div id="ramenDetails" >
 
-    <h2 id="h2"></h2>
+    <h2 id="h2">Ramen details</h2>
     <p id="Restaurant"></p>
     <p id="Rating"></p>
     <p id="Comment"></p>
@@ -22,7 +30,7 @@
 </div>
 
 <!--Form ya food -->
-<h2 id="formHeader"></h2>
+<h2 id="formHeader">Insert New ramen</h2>
 <form id="form">
     <input type="text" id="name" placeholder="Type of Ramen" required>
     <input type="text" id="Hotel" placeholder="Restaurant" required>
@@ -34,6 +42,6 @@
     
 
 
-    <script src="index.js"> </script>
+    
 </body>
 </html>

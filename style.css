@@ -1,4 +1,6 @@
-
+body{
+    background-color: rgb(14, 13, 13);
+}
 #form {
     display: flex;
     justify-content: center;
@@ -7,5 +9,29 @@
     justify-items: center;
     text-align: center;
     padding: 10px; ;
+
+}
+
+#h1{
+    display: flex;
+    justify-content: center;
+    color: aqua;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    padding: 20px;
+        
+}
+#h2{
+    color: chartreuse;
+}
+#formHeader{
+color: gold;
+display:flex;
+justify-content: center;
+}
+#pictures{
+    display: flex;
+    justify-content:space-between;
+    height: 170px;
 
 }
