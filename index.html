@@ -8,34 +8,28 @@
    <script src="index.js" defer> </script>
 </head>
 <body>
-    <h1 id="h1">Ramen Menu</h1>
+    <h1 id="h1">Ramen  Menu</h1>
 
     <div id="ramen-menu"></div>
 <!--details za food-->
-
-
 <div id="ramenDetails" >
-
-    <h2 id="h2">Ramen details</h2>
-    <p id="Restaurant"></p>
-    <p id="Rating"></p>
-    <p id="Comment"></p>
-
+    <h2 id="details">Ramen details</h2>
+     <div id="text">
+       <p id="Restaurant"></p>
+        <p id="Rating"></p>
+        <p id="Comment"></p>
+     </div>
 </div>
 
 <!--Form ya food -->
 <h2 id="formHeader">Insert New ramen</h2>
-<form id="form">
-    <input type="text" id="name" placeholder="Type of Ramen" required>
-    <input type="text" id="Hotel" placeholder="Restaurant" required>
-    <input type="text" id="pic" placeholder="Image URL" required>
-    <input type="number" id="rate" placeholder="Rate(1-10)" min="1" max="10" required>
-    <input type="text" id="Comment" placeholder="Comment" required>
-    <button type="submit">Submit Ramen</button>
-</form>
-    
-
-
-    
+     <form id="form">
+     <input type="text" id="name" placeholder="Type of Ramen" required>
+     <input type="text" id="Hotel" placeholder="Restaurant" required>
+     <input type="text" id="pic" placeholder="Image URL" required>
+     <input type="number" id="rate" placeholder="Rate" min="1" max="10" required>
+     <input type="text" id="Comment" placeholder="Comment" required>
+     <button type="submit">Submit Ramen</button>
+   </form>
 </body>
 </html>

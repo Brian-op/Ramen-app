@@ -8,6 +8,7 @@ body{
     justify-content: space-evenly;
     justify-items: center;
     text-align: center;
+    flex-direction: column;
     
 
 }
@@ -30,13 +31,15 @@ color: gold;
 display:flex;
 justify-content: center;
 }
-#pictures{
-    display: flex;
-    justify-content:space-around;
-    height: 170px;
 
-}
 #ramen-menu{
     display: flex;
     justify-content: center;
+}
+#text{
+    color: blueviolet;
+}
+#ramen-menu{
+    
+    
 }
