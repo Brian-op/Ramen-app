@@ -12,20 +12,20 @@ document.addEventListener("DOMContentLoaded", function(){
 
     let h1 = document.getElementById("h1");
     h1.innerText = "Ramen Menu";
+    document.getElementById("ramenDetails");
     document.getElementById("details").innerText = "Ramen Details";
     document.getElementById("formHeader").innerText = "Insert New Ramen";
-
-    let form = document.getElementById("form");
+    document.getElementById("form");
 
 
    //we be getting the elements from the HTML and Edit them here
    //Now lets get them !! 
-   const menu = document.getElementById("ramen-menu");
-   const ramenName = document.getElementById("name");
-   const restaurant = document.getElementById("Hotel");
-   const ratingRamen = document.getElementById("rate");
-   const commentsOnRamen  = document.getElementById("Comment");
-
+  const menu = document.getElementById("ramen-menu");
+  const ramenName = document.getElementById("name");
+  const restaurant = document.getElementById("restaurant");
+  const ratingRamen = document.getElementById("rating");
+  const commentsOnRamen= document.getElementById("comment");
+   
    //.>>>>>>DONE
 
 
@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
    function dispalyRamens(){
         menu.innerHTML= "";
+        
  
    //lets use >>forEach
    //load images of ramens using forEach
@@ -43,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function(){
        img.src = ramen.image;
        img.alt = ramen.name;
        img.title = ramen.title
-       img.style.height = '200px';
+       img.style.height = '190px';
        img.style.margin = "0px"
        img.addEventListener("click",() =>{
          return showRamenInfo(ramen);
@@ -58,12 +59,14 @@ document.addEventListener("DOMContentLoaded", function(){
      //Ramen details when Clicked
       function showRamenInfo(ramen){
     //Info we need is name, restaurant, rating and comment
-    
+      
       ramenName.innerText = ramen.name;
-      restaurant.innerText = "Restaurant:" + ramen.restaurant;
-      ratingRamen.innerText = "Rating:" + ramen.rating;    
-      commentsOnRamen.innerText = "Comment" + ramen.Comment;
+      restaurant.innerText = "Restaurant🍜: " + ramen.restaurant;
+      ratingRamen.innerText = "Rating 💫: " + ramen.rating;    
+      commentsOnRamen.innerText = "Comment 📒:" + ramen.comment;
+      
     }
+    
   }
      //we need to be able to include new twpes of ramen
 
@@ -78,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function(){
      restaurant: document.getElementById("Hotel").value,
      image: document.getElementById("pic").value,
      rating: document.getElementById("rate").value,
-     Comment: document.getElementById("Comment").value,
+     Comment: document.getElementById("comment").value,
     };
      //"value" is used to store user input into the ID name object
 
