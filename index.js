@@ -44,8 +44,8 @@ document.addEventListener("DOMContentLoaded", function(){
        img.src = ramen.image;
        img.alt = ramen.name;
        img.title = ramen.title
-       img.style.height = '190px';
-       img.style.margin = "0px"
+       img.style.height = '195px';
+       img.style.margin = "1px"
        img.addEventListener("click",() =>{
          return showRamenInfo(ramen);
        });
